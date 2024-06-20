@@ -2,6 +2,7 @@
   "index": "Introduction",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
+  "modules": "Modules",
   "about": {
     "title": "About",
     "type": "page"
