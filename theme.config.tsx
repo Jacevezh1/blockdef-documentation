@@ -4,12 +4,9 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>BLOCKDEF</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://blockdef.dev',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/Jacevezh1/blockdef-documentation',
   footer: {
     text: 'BLOCKDEF Foundation 2024.',
   },
