@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>BLOCKDEF</span>,
+  logo: <span style={{fontWeight: 'bolder', fontSize: '1.18rem'}}>BLOCKDEF</span>,
   project: {
     link: 'https://blockdef.dev',
   },
