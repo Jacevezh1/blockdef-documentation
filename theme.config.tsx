@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/Jacevezh1/blockdef-documentation',
   footer: {
-    text: 'BLOCKDEF Foundation 2024.',
+    text: '© BLOCKDEF Foundation 2024.',
   },
 }
 

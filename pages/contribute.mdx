@@ -6,6 +6,10 @@ title: "Contribute"
 
 We welcome contributions from developers and security researchers of all skill levels. Whether you want to report a bug, suggest a new feature, improve the documentation, or write code, your contributions are invaluable. Here’s how you can get started:
 
+## Overview
+
+This guide is intended to help you get started with contributing. By following these steps, you will understand the development process and workflow. If you want to contribute, but aren't sure where to start, you can create a new discussion.
+
 ## Reporting Issues
 
 If you encounter any issues while using BLOCKDEF, please report them using our [issue tracker](#). Provide as much detail as possible to help us understand and resolve the problem quickly.
@@ -13,13 +17,61 @@ If you encounter any issues while using BLOCKDEF, please report them using our [
 ## Contributing Code
 
 1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Write your code, including tests if applicable.
-4. Submit a pull request with a clear description of your changes.
+```bash
+git clone https://github.com/blockdef/web3-security-testing-guide.git
+```
 
-## Improving Documentation
+Or using GitHub CLI:
 
-Good documentation is crucial for the success of any open-source project. If you find any errors or areas that need improvement, feel free to edit the documentation and submit a pull request.
+```bash
+gh repo clone blockdef/web3-security-testing-guide
+```
+
+2. Install Node.js and pnpm
+Ensure you have Node.js version 18 or higher and pnpm@9.1.0 installed. You can check your current versions using:
+```bash
+node -v
+pnpm -v
+```
+
+3. Installing dependencies
+Once in the project's root directory, run the following command to install the project's dependencies:
+
+```bash
+pnpm install
+```
+After the install completes, pnpm links packages across the project for development and git hooks are set up.
+
+4. Running the dev playgrounds
+
+To start the local development playgrounds, run one of the following commands. These commands run playground apps, located at ./playgrounds, that are set up for trying out code while making changes.
+
+```bash
+pnpm dev        # `blockdef` docs
+pnpm build      # `@blockdef/core` build
+pnpm start      # `@blockdef/core` start
+```
+Once a playground dev server is running, you can make changes to any of the package source files (e.g. packages/react) and it will automatically update the playground.
+
+5. Create a new branch for your feature or bug fix.
+6. Write your code, including tests if applicable.
+7. Writing documentation
+
+```bash
+pnpm start
+```
+
+Try to keep documentation brief and use plain language so folks of all experience levels can understand. If you think something is unclear or could be explained better, you are welcome to open a pull request.
+
+8. Submit a pull request with a clear description of your changes.
+
+    - When you're ready to submit a pull request, you can follow these naming conventions:
+
+    - Pull request titles use the Imperative Mood (e.g., Add something, Fix something).
+    Changesets use past tense verbs (e.g., Added something, Fixed something).
+    When you submit a pull request, GitHub will automatically lint, build, and test your changes. If you see an ❌, it's most likely a bug in your code. Please, inspect the logs through the GitHub UI to find the cause.
+
+    - Please make sure that "Allow edits from maintainers" is enabled so the core team can make updates to your pull request if necessary.
 
 ## Community Support
 
